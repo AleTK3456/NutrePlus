@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalculadoraIMC"
+    android:background="@color/black">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/logo_1080x1920"
+        android:alpha="0.6"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:text="Calculadora IMC"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/Alturacm"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingrese Altura en CM"
+            android:inputType="number"
+            android:textColorHint="#7A6232"
+            android:layout_marginBottom="15dp"/>
+
+        <EditText
+            android:id="@+id/PesoenKG"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="Ingrese peso en KG"
+            android:inputType="number"
+            android:textColorHint="#7A6232"
+            android:layout_marginBottom="30dp"/>
+
+        <Button
+            android:id="@+id/btnCalcular"
+            android:layout_width="110dp"
+            android:layout_height="45dp"
+            android:text="Calcular"
+            android:backgroundTint="#07362B"
+            android:textColor="#FFF"/>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
